@@ -7,6 +7,6 @@ class SquareController < ApplicationController
     @square_input = params.fetch("user_square").to_f
     @result = @square_input ** 2
 
-    render({:template => "square"})
+    render({:template => "square_results"})
   end
 end
